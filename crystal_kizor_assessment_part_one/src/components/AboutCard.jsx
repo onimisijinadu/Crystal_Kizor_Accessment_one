@@ -51,7 +51,7 @@ export const AboutCard = () => {
           className={`absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110`}
           style={{ backgroundImage: `url(${activeIndex.image})` }}
         ></div>
-        <div className="bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
+        <div className="inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
         <div className="z-20 flex flex-col gap-1 shadow-2xl py-5">
           <h3 className="text-white text-2xl md:text-3xl font-bold">
             {activeIndex.name}
@@ -80,8 +80,8 @@ export const AboutCard = () => {
           {activeIndex.detail}
         </p>
         <div className="flex items-center gap-2 max-w-[250px]">
-          <button className="bg-transparent border-b border-b-gray-900 text-gray-800 font-sans font-semibold tracking-tight flex items-center gap-2 max-w-fit py-2 cursor-pointer hover:border-b-slate-600 hover:text-slate-600">
-            Explore {activeIndex.name.slice(0, 11)}{" "}
+          <button className="bg-transparent whitespace-nowrap border-b border-b-gray-900 text-gray-800 font-sans font-semibold tracking-tight flex items-center gap-2 max-w-fit py-2 cursor-pointer hover:border-b-slate-600 hover:text-slate-600">
+            Explore {activeIndex.name}{" "}
           </button>
           <ArrowRight className="w-6 h-6 mt-1.5" />
         </div>
@@ -90,13 +90,13 @@ export const AboutCard = () => {
       <div className="absolute lg:static flex justify-between lg:justify-center gap-4 top-[30%] lg:max-w-[200px] sm:top-[35%] w-full max-w-screen px-4 items-center transition-transform duration-300 ease-in text-gray-900/90 font-bold overflow-hidden">
         <button
           onClick={PrevBlog}
-          className="bg-white/40 hover:text-white hover:bg-black/70 rounded-full w-10 h-10"
+          className="bg-white/10 backdrop-blur-md text-white hover:text-black hover:bg-white rounded-full w-10 h-10"
         >
           <ArrowLeftCircle className="w-10 h-10" />
         </button>
         <button
           onClick={NextBlog}
-          className="bg-white/40 hover:text-white hover:bg-black/70 rounded-full w-10 h-10"
+          className="bg-white/10 backdrop-blur-md text-white hover:text-black hover:bg-white rounded-full w-10 h-10"
         >
           <ArrowRightCircle className="w-10 h-10" />
         </button>

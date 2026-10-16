@@ -6,6 +6,11 @@ import {
 
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaXTwitter,
+} from 'react-icons/fa6';
 
 import { AboutCard } from '../components/AboutCard';
 import { CallToAction } from '../components/CallToAction';
@@ -156,14 +161,94 @@ export const HomePage = () => {
         <AboutCard />
       </section>
       {/* call to action section */}
-      <section>
+      <section className="space-y-6 mt-5">
         <CallToAction />
       </section>
-      <footer>
-        <div></div>
-        <div>
-          <p>&&copy; 2026 Crystal Kizor. All rights reserved </p>
-          <p>Designing a more inclusive and sustainable future</p>
+      <footer className="flex flex-col gap-3 text-black pb-5 px-10 lg:px-16 font-serif">
+        <div className="flex flex-col md:flex-row items-start lg:items-center justify-between gap-4">
+          <div className="flex items-center max-w-[250px] max-h-[50px]">
+            <img
+              src="/Crystal_Kizor_Logo.png"
+              alt="Crystal Kizor Logo"
+              className="flex object-contain w-full h-full"
+            />
+          </div>
+          <div className="flex flex-col d:items-center gap-3 md:flex-row md:mt-3">
+            <a
+              href="#About"
+              className="cursor-pointer hover:text-gray-900 font-medium "
+            >
+              About
+            </a>
+            <a
+              href="#Work"
+              className="cursor-pointer hover:text-gray-900 font-medium "
+            >
+              Work
+            </a>
+            <a
+              href="#Initiatives"
+              className="cursor-pointer hover:text-gray-900 font-medium "
+            >
+              Initiatives
+            </a>
+            <a
+              href="#Writing"
+              className="cursor-pointer hover:text-gray-900 font-medium "
+            >
+              Writing
+            </a>
+            <a
+              href="#Speaking"
+              className="cursor-pointer hover:text-gray-900 font-medium "
+            >
+              Speaking
+            </a>
+            <a
+              href="#Contact"
+              className="cursor-pointer hover:text-gray-900 font-medium "
+            >
+              Contact
+            </a>
+          </div>
+          <div className="flex items-center gap-4 text-black sm:mt-3">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="hover:text-pink-500 transition-colors"
+            >
+              <FaInstagram className="w-6 h-6" />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="hover:text-blue-500 transition-colors"
+            >
+              <FaLinkedin className="w-6 h-6" />
+            </a>
+
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+              className="hover:text-zinc-400 transition-colors"
+            >
+              <FaXTwitter className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+        <div className="flex gap-4 flex-col md:flex-row justify-between mt-5">
+          <p className="text-black/60">
+            &copy;2026 Crystal Kizor. All rights reserved{" "}
+          </p>
+          <p className="text-black/60">
+            Designing a more inclusive and sustainable future
+          </p>
         </div>
       </footer>
     </div>
