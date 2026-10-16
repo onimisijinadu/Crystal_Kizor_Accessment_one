@@ -32,7 +32,7 @@ export const Navbar = ({ isOpen, toggleNavBar, rel }) => {
           >
             <li>
               <a
-                href="#center"
+                href="#"
                 className={`${isActive === "home" ? "text-[#000] hover:text-[#333] " : "text-[#333] hover:text-[#000]"}`}
               >
                 Home

@@ -175,37 +175,37 @@ export const HomePage = () => {
           </div>
           <div className="flex flex-col d:items-center gap-3 md:flex-row md:mt-3">
             <a
-              href="#About"
+              href="#"
               className="cursor-pointer hover:text-gray-900 font-medium "
             >
               About
             </a>
             <a
-              href="#Work"
+              href="#"
               className="cursor-pointer hover:text-gray-900 font-medium "
             >
               Work
             </a>
             <a
-              href="#Initiatives"
+              href="#"
               className="cursor-pointer hover:text-gray-900 font-medium "
             >
               Initiatives
             </a>
             <a
-              href="#Writing"
+              href="#"
               className="cursor-pointer hover:text-gray-900 font-medium "
             >
               Writing
             </a>
             <a
-              href="#Speaking"
+              href="#"
               className="cursor-pointer hover:text-gray-900 font-medium "
             >
               Speaking
             </a>
             <a
-              href="#Contact"
+              href="#"
               className="cursor-pointer hover:text-gray-900 font-medium "
             >
               Contact
